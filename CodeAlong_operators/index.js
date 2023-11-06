@@ -47,3 +47,40 @@ console.log(c && b); // c and b
 console.log(c || b); // or operator
 console.log(c && ! b); // c and not b
 
+// Type checking
+
+let d = 2
+let e = "two"
+let f = "2"
+
+console.log(typeof d);
+console.log(typeof e);
+console.log(typeof f);
+
+console.log(d * d);
+console.log(d + e);
+console.log(d * f); // works because it is a digit despite it being string
+console.log(typeof (d * f)); // type is now number
+
+let g = (d == f)
+console.log(g);
+
+let x = true; let y = 1
+console.log(x == y);
+console.log(x === y);
+
+console.log(x != y);
+console.log(x !== y);
+
+console.log(eval("5*5*5+4")); // evaluation
+
+let s = "5"
+let i = 5
+
+let total = i + parseInt(s);
+console.log(total);
+
+console.log(parseInt("55.95boom")); // strips everything after decimal
+console.log(parseFloat("55.95boom")); // keeps only numeric
+
+
