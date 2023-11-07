@@ -66,3 +66,40 @@ if (age > 11){
 if (age > 12){
     console.log("Age is greater than 10");
 }
+
+// Loops
+// While loop - conditional loop
+
+let lives = 3;
+
+while (lives > 0){  // If condition is not met while loop will not run
+    console.log(`lives is ${lives}`);
+    lives -= 1
+}
+
+// Do While loop
+
+do {
+    console.log(`from the do while loop lives is ${lives}`); // this will run at least once code process beforec ondition is checked
+    lives -= 1
+} while (lives > 0)
+
+// For loop - unconditional loop 
+
+// for (let i = 0; i < 10; i++){
+//     console.log(`i squared is ${i**2}`);
+// }
+
+let people = ["Bob", "Dave", "Bill", "Lisa"]
+
+for (let i = 0; i < people.length; i++){
+    if (people[i][0] == "B"){ // only people with first letter is B
+    console.log(people[i]);
+    }
+}
+
+// For Each loop
+
+// people.forEach(person => {
+//     console.log(person);
+// })
