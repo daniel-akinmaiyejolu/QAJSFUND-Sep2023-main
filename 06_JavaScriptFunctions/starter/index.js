@@ -12,17 +12,44 @@ const movies = [
 
 // Part 1 - Create a function to find a movie and output it's detail
 
-const findMovie = movieTitle => {
-  for (let movie of movies){
-    if (movie.title == movieTitle){
-      console.log(`${movie.title} is a movie directed by ${movie.director} released in ${
-        movie.year
-      }`);
-    }
-  }
-  console.log(movie);
-    
-  }
+  // function findMovie(movieTitle) {
+  //   for (let movie of movies) {
+  //     if (movie.title === movieTitle) {
+  //       console.log(
+  //         `${movie.title} is a film directed by ${movie.director} released in ${
+  //           movie.year
+  //         }`
+  //       );
+  //     }
+  
+  //     // console.log(movie);
+  //   }
 
+  //   // console.log(movie); 
+  // }
+  
+
+  // findMovie("Star Wars");
+ 
+  //  console.log(movie); 
+  
+ 
+  // var movie = "Thor: Ragnorok";
+  
+  // console.log(movie);
+  
+  // findMovie(movie);
 
 // Part 2 = Create a function to return a movie object
+
+function returnMovie(movieTitle){
+  for (let movie of movies){
+    if (movie.title === movieTitle){
+      return movie
+    }
+    console.log(movie);
+  }
+  console.log("Any text, any text at all!");
+}
+
+
